@@ -1,13 +1,13 @@
-import React from 'react';
-import Table from './Table';
-import List from './List';
+import React from "react";
+import Table from "./Table";
+import List from "./List";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      buttonClicked: '',
+      buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable*/,
       grades: {},
     };
@@ -94,13 +94,13 @@ class App extends React.Component {
         </div>
         <nav className="UnderlineNav d-flex flex-justify-center">
           <div className="UnderlineNav-body pt-6">
-            <button className="btn btn-primary" onClick={() => this.handleButtonClicked('assignments')}>
+            <button className="btn btn-primary" onClick={() => this.handleButtonClicked("assignments")}>
               Assignments
             </button>
-            <button className="btn btn-primary" onClick={() => this.handleButtonClicked('students')}>
+            <button className="btn btn-primary" onClick={() => this.handleButtonClicked("students")}>
               Students
             </button>
-            <button className="btn btn-primary" onClick={() => this.handleButtonClicked('grades')}>
+            <button className="btn btn-primary" onClick={() => this.handleButtonClicked("grades")}>
               Grades
             </button>
           </div>
